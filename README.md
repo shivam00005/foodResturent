@@ -1,5 +1,5 @@
 
-# :fork_and_knife: Weather Web App
+# :fork_and_knife: FoodResturent Website
 
 
 The online food ordering website is a user-friendly interface designed to provide a hassle-free food ordering experience to its users. The website is designed using HTML, CSS, and pure JavaScript, making it responsive and compatible with all devices. It features a user-friendly interface with an intuitive design that allows users to easily navigate through the site and place their orders.
