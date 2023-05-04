@@ -629,3 +629,144 @@ section {
   font-size: 1.6rem;
   color: var(--light-black);
 }
+.footer {
+  text-align: center;
+  /* padding-bottom: 10rem; */
+}
+
+.footer .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .icons-container .icons {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.footer .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background: var(--peru);
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  line-height: 5.8rem;
+  font-size: 2rem;
+}
+
+.footer .icons-container .icons h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.footer .icons-container .icons p {
+  line-height: 1.5;
+  font-size: 1.7rem;
+  color: var(--light-black);
+  text-transform: none;
+}
+
+.footer .share {
+  margin: 2rem 0;
+}
+
+.footer .share a {
+  height: 6rem;
+  width: 6rem;
+  line-height: 5.8rem;
+  color: var(--white);
+  background: var(--black);
+  margin: 0 0.3rem;
+  font-size: 2.5rem;
+}
+
+.footer .share a:hover {
+  background: var(--peru);
+}
+
+.footer .credit {
+  padding-top: 2.5rem;
+  margin-top: 3rem;
+  border-top: var(--border);
+  font-size: 2rem;
+  color: var(--light-black);
+}
+
+.footer .credit span {
+  color: var(--peru);
+}
+
+/* media queries  */
+
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 3rem 2rem;
+  }
+
+  html {
+    font-size: 55%;
+  }
+
+  .home .slide .content h3 {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: initial;
+    bottom: 1rem;
+  }
+
+  .menu .slide .box-container .box {
+    flex-flow: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .slide .content h3 {
+    font-size: 7rem;
+  }
+}
